@@ -1,0 +1,134 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.right { 
+    float: right; 
+}
+
+.dropdown{
+    display: none;
+    background-color: #4CAF50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a:hover {
+    background-color: #111;
+}
+
+.right:hover .dropdown{ 
+    display: block;
+    position: fixed;
+    right: 0px;
+}
+
+.activo{
+   background-color: grey;
+   font-style: uppercase; 
+}
+
+@media screen and (max-width: 600px){
+    ul .right, 
+    ul li {
+        float: none;
+    }
+    
+    .right:hover .dropdown{ 
+    position: relative;
+    }
+    #form1{
+        display: none;
+    }
+}
+.container {
+    height: 538px;
+    left: 35%;
+    margin: -255px 0 0 -245px;
+    position: absolute;
+    top: 50%;
+    width: 510px;
+}
+
+.tabla {
+    margin-top: 15px;
+    text-align: center;
+    table-layout: fixed;
+    border: 2px solid black;
+
+}
+
+.tabla th{
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+.tabla td{
+    border: 2px solid black;
+}
+form {
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+margin-right: 25px;
+}
+
+form input[type=file]{
+    width: 400px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-left: 200px;
+}
+
+form input[type=button]{
+    width: 260px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid green;
+    cursor: pointer;
+    border-radius: 2px;
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
